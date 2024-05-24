@@ -35,11 +35,13 @@ class MyString:
 
   def count_sentences(self):
    value = self.value
-  for punc in ['!','?']:
-        value = value.replace(punc, '.')
-    
-  sentences = [s for s in value.split('.') if s]
-    
+   for punc in ['!', '?']:
+     value = value.replace(punc, '.')
+
+   sentences = [s for s in value.split('.') if s]
+
+   return len(sentences)  
+ 
     
 
 
